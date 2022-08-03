@@ -34,4 +34,13 @@ button::after {
   left: 0;
   outline: 1px solid rgba(255, 255, 255, .2);
   pointer-events: none;
+  transition: 500ms all;
+}
+button:hover::before {
+  transform: rotate(45deg);
+  background-color: transparent;
+}
+button:hover::after {
+  transform: rotate(-45deg);
+  background-color: transparent;
 }
