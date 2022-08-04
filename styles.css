@@ -109,4 +109,8 @@ button {
   letter-spacing: .2rem;
   font-weight: 700;
   color: #fff;
+  transition: 300ms ease-in-out background-position;
+}
+.button3:hover {
+  background-position: right top;
 }
