@@ -23,6 +23,7 @@ button {
   cursor: pointer;
   color: #fff;
 }
+/* button 1 */
 .button1::before,
 .button1::after {
   content: '';
@@ -44,6 +45,7 @@ button {
   transform: rotate(-45deg);
   background-color: transparent;
 }
+/* button 2 */
 .button2 {
   margin-top: 7rem;
   background-color: #f12424;
@@ -73,3 +75,7 @@ button {
   border-radius: 100vw;
   transition: 200ms ease-in-out transform;
 }
+.button2::before { background-color: rgba(241, 36, 36, .6);}
+.button2::after { background-color: rgba(241, 36, 36, .3);}
+
+.button2:hover { transform: translate(-16px, -16px);}
