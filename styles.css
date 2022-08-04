@@ -23,8 +23,8 @@ button {
   cursor: pointer;
   color: #fff;
 }
-button::before,
-button::after {
+.button1::before,
+.button1::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -36,11 +36,40 @@ button::after {
   pointer-events: none;
   transition: 500ms all;
 }
-button:hover::before {
+.button1:hover::before {
   transform: rotate(45deg);
   background-color: transparent;
 }
-button:hover::after {
+.button1:hover::after {
   transform: rotate(-45deg);
   background-color: transparent;
+}
+.button2 {
+  margin-top: 7rem;
+  background-color: #f12424;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  padding: 1.4rem 7rem;
+  position: relative;
+  cursor: pointer;
+
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-weight: 700;
+  border-radius: 100vw;
+  transition: 200ms ease-in-out transform;
+}
+.button2::before,
+.button2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 100vw;
+  transition: 200ms ease-in-out transform;
 }
