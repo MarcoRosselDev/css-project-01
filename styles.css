@@ -79,3 +79,12 @@ button {
 .button2::after { background-color: rgba(241, 36, 36, .3);}
 
 .button2:hover { transform: translate(-16px, -16px);}
+.button2:hover::before { transform: translate(8px, 8px);}
+.button2:hover::after { transform: translate(16px, 16px);}
+/* esto retrocede el botton al clickearlo */
+.button2:active,
+.button2:active::before,
+.button2:active::after {
+  transform: translate(0, 0);
+  transition: 70ms ease-in-out transform;
+}
